@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spel - 不及昼夜</title><meta name="author" content="Spel"><meta name="copyright" content="Spel"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="一句道不尽，缄默宁无言">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spel">
+<meta property="og:url" content="http://spel.top/page/4/index.html">
+<meta property="og:site_name" content="Spel">
+<meta property="og:description" content="一句道不尽，缄默宁无言">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg">
+<meta property="article:author" content="Spel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg"><link rel="shortcut icon" href="https://pic.downk.cc/item/5f85c1491cd1bbb86bdd6cea.png"><link rel="canonical" href="http://spel.top/page/4/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-10-14 18:26:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">38</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://pic.downk.cc/item/5f842f3c1cd1bbb86bf43004.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Spel</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Spel</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%85%AB%EF%BC%89/" title="人祖传（八）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（八）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%85%AB%EF%BC%89/" title="人祖传（八）">人祖传（八）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:10:31.000Z" title="发表于 2020-10-14 17:10:31">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">话说，人祖挖下双眼，化为一儿一女。儿子为太日阳莽，女儿为古月阴荒。
+而太日阳莽好喝美酒，一次喝出事端，被困在平凡深渊。最后因祸得福，得到菊花样子的名声蛊，逃出生天。
+因为有了名声蛊，太日阳莽的名声渐渐大了。很快，世界上就传遍太日阳莽是个大酒鬼的消息。
+一天，一群斑虎蜜蜂拖着蜂巢，主动找到太日阳莽。
+“太日阳莽啊，听说你喜好美酒，一直都说天地四猴的美酒最好喝。但它们酿造的酒，哪里及得上我们的蜜酒呢？今天我们特意带来蜜酒，请您品尝品尝。”
+这些蜜蜂一个个都有花豹子一般大小，身上的花纹好似虎纹，黄金打底，黑斑点缀。说话都很客气，但是隐含威胁强迫的意味。
+太日阳莽心中叫苦，这叫身在家中做，祸从天上来。斑虎蜜蜂实力强大无比，单单一只，他也不是对手。更何况来了一群呢？
+太日阳莽只好勉为其难，尝尝蜂巢中的蜜酒。
+他刚刚喝下一口，双眼就发亮了。
+蜜酒甜而不腻，醇香可口，十分好喝，是天地间的绝对佳品！
+“好喝，好喝，太好喝啦。这蜜酒喝了，能让人感到自己是天底下最幸福的人！”太日阳莽一口口喝下肚，赞不绝口。
+斑虎蜜蜂们都笑了，感到很高兴。
+首领就问太日阳莽：“那你说，我们的蜜酒和天地四猴的酒相比，谁更好喝 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%83%EF%BC%89/" title="人祖传（七）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（七）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%83%EF%BC%89/" title="人祖传（七）">人祖传（七）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:03:51.000Z" title="发表于 2020-10-14 17:03:51">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">太日阳莽一次喝得酩酊大醉，醒来的时候，头脑生疼，忘记了醉酒时发生的一切。他发现自己不知道为什么，被困在一处孤峰之上。孤峰周围，都是几千丈宽的深渊。
+深渊里充满了漩涡似的风，一团团的风，都是惨绿色的，这是“平常风”。风中刮着尘土，都是暗黄色的“凡俗尘”。
+太日阳莽心沉谷底。因为他认出来，这是平凡深渊，从未有生物能飞跃过去。他被困在这处孤峰上，出不去了，迟早要饿死。
+所幸孤峰之上，还有一片密林。太日阳莽饿了，便来到这片密林寻找野果充饥。但是这片密林很奇怪，黑色的泥土像是沼泽，带着腐败的气息。每棵树都没有树叶，枯瘦的枝干像是怪爪。偏偏当风声吹来的时候，却还有树叶沙沙作响的声音。
+太日阳莽找不到食物，陷入绝望，知道自己命不久矣。
+几天过去，他饿得四肢无力，只能依靠着树干，瘫躺在地上。
+他渐渐地昏迷过去。
+在迷迷糊糊中，他听到许多人的声音在交谈。
+“喂，你看你看，这个人终于昏倒了。”
+“嗯，果然不出我的所料，他要完蛋了。”
+“其实平凡深渊可以出去，只需要得到名声蛊就好了。”
+“名声蛊就在细语密林的中央，被一块石头压着。可惜他不知道，哈哈哈……”
+“嘘，咱们小声点说话，万一被他听到就不好啦。”
+“ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%85%AD%EF%BC%89/" title="人祖传（六）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（六）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%85%AD%EF%BC%89/" title="人祖传（六）">人祖传（六）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:02:26.000Z" title="发表于 2020-10-14 17:02:26">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖挖去左右双眼，分别化为大儿子太日阳莽，二女儿古月阴荒。
+太日阳莽和古月阴荒朝夕相处，不禁对自己的妹妹动了情思。但古月阴荒却屡屡拒绝了太日阳莽的追求。
+太日阳莽为此困恼不已。
+他知道自己需要帮助，因此求教智慧蛊。
+起先，智慧蛊并不搭理他，能躲多远就躲多远。但是太日阳莽锲而不舍，智慧蛊不堪其扰，只好对他说了一个法子——
+“在世界的东方，栖息着一群蜜桃猴。它们酿了酒，你先去喝了酒，再来找我罢。”
+太日阳莽便去了东方，喝了酒。
+蜜桃猴群酿的是果酒。太日阳莽喝了之后回来，从此以后，他的脸蛋就变得红扑扑的。他咂咂嘴回味道：“原来酒是甜的。”
+智慧蛊笑了笑，又对他说：“在世界的西方，有一群通灵猴。它们酿了酒，你再去喝。”
+通灵猴酿的酒，是苦酒。太日阳莽又去了西方，喝了酒，从此以后，他的舌苔就是黄褐色的。他一脸苦兮兮的样子回来：“原来酒也有苦的。”
+智慧蛊便对他说：“酒有苦甜，爱情也是如此，人生更是如此。在那北面，有一群金刚猴。它们也有酒，你去喝喝看。”
+金刚猴酿的是烈酒。
+太日阳莽喝了很对胃口，他喜欢烈酒，喝得酩酊大醉。
+他觉得这酒太对他胃口了，醉了之后更想喝。喝了碗里的，还想喝坛子里的。
+最终 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%BA%94%EF%BC%89/" title="人祖传（五）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（五）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%BA%94%EF%BC%89/" title="人祖传（五）">人祖传（五）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:01:14.000Z" title="发表于 2020-10-14 17:01:14">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">话说，人祖得了态度蛊。态度蛊就像是一张面具，人祖无心，戴不上去。
+因为之前，人祖已经将心交给了希望蛊，从此以后他再也不惧怕困境。
+但是人祖想要使用态度蛊，却必须得有一颗心。
+人祖感到很为难，就请教态度蛊。他说：“蛊啊，态度有时候就能说明一切。我如今遭遇的问题，你也知道，所以要向你请教。”
+态度蛊便道：“这其实也不难。人祖啊，你现在缺少一颗心，只需要寻找到一颗新的就行了。”
+人祖很疑惑，再次请教道：“那我该怎么寻找到一颗新的心呢？”
+态度蛊叹道：“心，无处在，又无处不在。寻心，既艰难又容易。以你的情况，现在就能得到一颗心。”
+人祖大喜：“快告诉我怎么得到？”
+态度蛊却警告他：“这颗心，名叫孤独。人啊，你确定你要得到它吗？当你得到它之后，你会感受到无边的痛苦、寂寞，甚至是恐惧！”
+人祖没有把态度蛊的警告放在心上，他继续追问。
+态度蛊不好违逆人祖的命令，便答道：“你只需要在有星星的夜里，仰望天空，什么话都不要讲。等到天亮时，你就能得到孤独之心了。”
+当天晚上，就是繁星漫空的良辰。
+人祖依照态度蛊的话，独自一人坐在山头，仰望夜空。
+在此之前，他生活艰难困难，时刻为了生存而挣扎奔波，根本就没有时 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%9B%9B%EF%BC%89/" title="人祖传（四）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（四）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%9B%9B%EF%BC%89/" title="人祖传（四）">人祖传（四）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T08:58:07.000Z" title="发表于 2020-10-14 16:58:07">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖有规矩二蛊，就捕捉天下万蛊，得了力量，失了智慧。
+此时他的网中，还剩下三只蛊。他打开一看，这三只蛊分别是态度蛊、相信蛊还有怀疑蛊。
+人祖不愿意放它们离去，这三只蛊只好和人祖商量赌一把。
+只要人祖一打开网口，它们就分成三个方向同时分出去。谁被人祖抓到谁就降服。
+人祖抓住了态度蛊。
+态度蛊依照赌约，降服在人祖的手上，告诉人祖：“人，你抓住我，我也只能自认倒霉了。从今以后，我就为你所用吧。你只要把我戴上，就能发挥我的作用了。”
+态度蛊外形就像是一张面具，人祖把态度蛊戴在脸上，结果怎么也戴不上，哪怕用绳子牢牢缠绕着，也总会脱落。
+“这是怎么一回事啊？”人祖很纳闷。
+态度蛊就笑：“我知道了，人啊，原来你没有心了。态度就是心的面具，你没有心，怎么能戴得上我呢？”
+人祖这才恍然，他早已经把心交给了希望。
+他已经无心了。
+无心的人，是戴不上态度面具的。换句话讲，有心的人，态度就是一张面具。
+12摘自小说：蛊真人   作者：蛊真人</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%EF%BC%89/" title="人祖传（三）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%EF%BC%89/" title="人祖传（三）">人祖传（三）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T08:56:43.000Z" title="发表于 2020-10-14 16:56:43">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">自从人祖道出了正确的名字之后，就降服了规矩二蛊。他的第一个命令，就是叫它们为自己捕捉一只寿蛊。
+规矩二蛊一方一圆，合力之下，能捕捉天下万蛊，一只寿蛊自然不在话下。
+人祖用了寿蛊，顿时重获青春，回到了二十岁的年龄。
+但此时规蛊却对他道：“人啊，你虽然降服了我们，但是你每次命令我们，都要增加一条规矩。
+矩蛊也跟着道：“我们为你捕捉了寿蛊，这是第一次命令。我们的新规矩就是，不会再为你捕捉重复的蛊虫。”
+也就是说，若是今后人祖再要捕捉寿蛊，规矩二蛊是不会出手的。
+人祖点点头，只能答应下来。
+他开口下了第二个命令：“那么除了寿蛊之外，就请你们将天下万蛊，都替我捕捉过来吧。”规矩二蛊得了这个命令，顿时规蛊变成无穷大的一个圆，囊括了宇和宙。矩蛊变成无穷大的一个方，涵盖了大世界。
+一方一圆组成一张巨网，将整个天地乾坤都笼罩住。
+当它们重新缩小，回到人祖手掌心的时候，天下万蛊除了寿蛊之外，都被它们捕捉到了。人祖大喜，这样一来，天下所有的蛊虫都归属自己了，从此以后他将是世界之主！
+然而当他打开方圆的丝网时，哗啦一声，一股巨大的虫流向外喷涌而出。规矩二蛊辛辛苦苦捕捉来的蛊虫，都争先恐后地飞走了。
+当人祖连忙 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" title="人祖传（二）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（二）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" title="人祖传（二）">人祖传（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-13T17:13:08.000Z" title="发表于 2020-10-14 01:13:08">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">话说人祖因为希望，而摆脱了困境。但是他终究老态龙钟了，没有力量和智慧，不能再继续狩猎，甚至牙齿都掉落光了，很多野果野菜都咀嚼不动了。
+人祖已经感觉到死亡的渐渐逼近。
+这个时候，希望蛊告诉他：“人啊，你不能死啊。你死了，心就没了，我希望就将失去了栖息之所。”
+人祖很无奈：“谁想死呢，但是天地要我死，我不得不死啊。”
+希望蛊就说：“凡事都有希望。只要你抓住寿蛊，你就能增添新的寿命。”
+人祖早就听说过寿蛊的存在，但是他很无奈地摊手：“寿蛊静止时，谁都察觉不了它。当它飞行时，比光还快。我怎么可能捕捉到它呢。这太难了！”
+希望蛊便告诉人祖一个秘密：“人啊，凡事都不要放弃希望。我告诉你，就在大地的西北角上，有一座大山。山顶有一个洞，洞中生活着一圆一方两只蛊虫。你只要能降服这两只蛊虫，天底下没有什么蛊虫不能捕捉的，哪怕寿蛊也不例外！”
+人祖已经走投无路了，这是他仅剩下的唯一的希望。
+他耗尽千辛万苦，找到了这座大山。又冒着万般惊险，攀上了山顶。在山顶的洞口处，他仅剩下最后一点点的力气，步履蹒跚地挪了进去。
+山洞中一片黑暗，伸手不见五指，人祖在黑暗中走啊走。时而磕磕碰碰，不知道撞到了什么东西，磕得头破血 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/hello-world/" title="人祖传（一）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（一）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/hello-world/" title="人祖传（一）">人祖传（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-13T17:08:29.000Z" title="发表于 2020-10-14 01:08:29">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">传说，这个世界刚刚形成的时候，一片蛮荒，野兽横行，出现了第一个人类，名字叫人祖。他茹毛饮血，生活十分困难。
+尤其是还有一群野兽，名字叫困境，特别喜欢人祖的味道，想要吃掉他。
+人祖没有山石般强硬的身躯，没有野兽的利齿爪牙，怎么和这群叫做困境的野兽争斗呢？他的食物来源很不稳定，整天东躲西藏，处在大自然食物链的低端，几乎就要生活不下去了。
+这个时候，有三头蛊，主动找上门来，对人祖说：“只要你用你的生命来供养我们，我们就帮助你渡过难关。”
+人祖走投无路，只好答应了这三头蛊。
+他先用自己的青春少年，供养了三只蛊中最大的那只，那只蛊带给了他力量。
+靠着力量，人祖的生活开始改善了，他开始有稳定的食物来源，有能够自保的力量。他好勇斗狠，击败了很多困境。但很快就吃了苦头。最后他发现，力量不是万能的，它也需要恢复和修养，不能随意挥霍。
+而且对于整个困境兽群来讲，他一个人的力量实在太小了。
+人祖痛定思痛，决定用自己最年富力强的中年，来供养三只蛊中最美丽的那只。
+于是，第二只蛊带给了他智慧。
+人祖有了智慧，学会了思考和反省，并开始累积经验。他发现很多时候运用智慧，比运用力量更有效果。靠着智慧和力量，他一度征服 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Spel</div><div class="author-info__description">一句道不尽，缄默宁无言</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">38</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div><a class="button--animated" id="card-info-btn" href="mailto:zhong_wuyan@163.com"><i class="fas fa-envelope"></i><span>联系方式</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">感谢访问本站(●'◡'●)</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（三十八）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十八）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（三十八）">人祖传（三十八）</a><time datetime="2020-10-14T09:53:53.000Z" title="发表于 2020-10-14 17:53:53">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（三十七）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十七）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（三十七）">人祖传（三十七）</a><time datetime="2020-10-14T09:53:19.000Z" title="发表于 2020-10-14 17:53:19">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（三十六）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十六）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（三十六）">人祖传（三十六）</a><time datetime="2020-10-14T09:51:59.000Z" title="发表于 2020-10-14 17:51:59">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（三十五）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十五）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（三十五）">人祖传（三十五）</a><time datetime="2020-10-14T09:50:54.000Z" title="发表于 2020-10-14 17:50:54">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（三十四）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十四）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（三十四）">人祖传（三十四）</a><time datetime="2020-10-14T09:50:08.000Z" title="发表于 2020-10-14 17:50:08">2020-10-14</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/"><span class="card-category-list-name">人祖传</span><span class="card-category-list-count">38</span></a></li>
+            
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.1em; color: #999">小说</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">38</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">38</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-10-14T10:26:41.333Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Spel</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  $.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js',function () {
+    jinrishici.load(function (result) {
+      if (true) {
+        var sub = "".length == 0 ? new Array() : "".split(',')
+        var content = result.data.content
+        var both = sub.unshift(content)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spel - 不及昼夜</title><meta name="author" content="Spel"><meta name="copyright" content="Spel"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="一句道不尽，缄默宁无言">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spel">
+<meta property="og:url" content="http://spel.top/page/3/index.html">
+<meta property="og:site_name" content="Spel">
+<meta property="og:description" content="一句道不尽，缄默宁无言">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg">
+<meta property="article:author" content="Spel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg"><link rel="shortcut icon" href="https://pic.downk.cc/item/5f85c1491cd1bbb86bdd6cea.png"><link rel="canonical" href="http://spel.top/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-10-14 18:26:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">38</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://pic.downk.cc/item/5f842f3c1cd1bbb86bf43004.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Spel</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-heart"></i><span> 说说</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Spel</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（十八）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十八）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（十八）">人祖传（十八）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:38:02.000Z" title="发表于 2020-10-14 17:38:02">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖踏上独属于自己的人生之路，脱离了生死门，却落魄在平凡深渊之中。
+他徘徊在渊底，迷茫地前行，过了很久很久的时间，想走出平凡深渊，却始终找不到出路。
+在苦闷中，思想蛊指点他迷津：“人啊人啊，你循着其他存在踩踏出来的脚印行走，这固然会轻松安全，但你要想不平凡，想走出平凡深渊，一味遵循别人的路，恐怕机会不大。你既然走了自己的人生路，一切的难关，就得你自己闯，就得创新，就得有自己的脚印。”
+人祖得到指点后，恍然大悟，十分欢喜，便照着思想蛊建议的去做。
+他脱离地面上原本存在的脚印，开始涉足没有较硬的地面。
+平凡深渊的地底，很不好走。
+有些地方是泥泞沼泽，十分容易泥足深陷，而且恶臭熏人。有些地方是荆棘满布，尖刺密密麻麻，人祖被刺得伤痕遍体。还有的地底，埋藏着刃蛊。人祖踩在上面，脚底就被尖锐的刃边割伤，伤口宽大，血液横流，走起路来，痛彻心扉。
+脚底伤口传来的疼痛，让人祖决定轻轻的走。
+但走着走着，人祖在平凡深渊中迷了路，很多时候，他会重复之前的路，做无用功。
+人祖渐渐发现了这个问题，十分困扰。
+怎么样才能在深渊中，不迷路呢？
+思想蛊便告诉他：“人祖你要不想迷路，完全可以自己做到。你害怕痛，轻轻的走 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（十七）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十七）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（十七）">人祖传（十七）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:37:39.000Z" title="发表于 2020-10-14 17:37:39">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖走上自己的人生路，视野大变，一片黑暗。
+他踏出了第一步。
+啪。
+下一刻，他踩在了泥泞之中。
+他抬起脚，用手抹了一把，全是烂泥，臭不可闻。
+他踌躇不前。
+这时，自己蛊道：“人啊，不要犹豫，你要走自己的路，就要靠自己的脚。你的脚踩在路面上，不要怕肮脏。”
+人祖踏上他的人生之路，周围一片黑暗，脚下一片肮脏的泥泞。
+人祖便问自己蛊：“这究竟是哪里？”
+自己蛊就道：“这里是平凡深渊最底层的平凡泥潭。”
+平凡深渊人祖是知道的，他的大儿子太日阳莽，就曾经被困在深渊过。
+人祖不由振奋地道：“这既然是平凡深渊的底部，那岂不是说我已经脱离了生死门，重新回到了世间？岂不是说我已经重生了？”
+“也可以这么说。”自己蛊道。
+“但这怎么可能？我还没有通过落魄谷，没有闯过逆流河呢。”人祖难以置信地道。
+自己蛊：“人啊，你要知道，你说的那条是宿命蛊走过的路。而你已经走上了新路，这是一条全新的路，是由你开辟的。这条路走向哪里，全按照你的心意。我早就说过，路就在你的脚下，只要你想走。”
+人祖恍然大悟：“原来是这样啊。”
+旋即又疑惑：“那我怎么走到了这里来呢？”
+自己蛊道：“人，生来就平凡。虽然是万物之灵，但没有猛虎的 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（十六）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十六）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（十六）">人祖传（十六）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:36:40.000Z" title="发表于 2020-10-14 17:36:40">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖所生第三子——北冥冰魄，因为意外蛊复生，流落在外。遇到古月阴荒，赋予二姐全新的人生意义。
+而后，在智慧蛊的指点下，姐弟俩结伴来到蓝海，寻求能复活父亲人祖的生命宝石。
+结果古月阴荒察觉到生命的奥秘，主动牺牲了自己，将自己还原成一块残缺的生命宝石。
+北冥冰魄怀揣着生命宝石，企图回到父亲的身边，救活人祖。
+但他进入生死门却无比困难。
+生死门有两条路，一条生路，一条死路。不管哪条路上，都有众多的忧患蛊。
+而要克服忧患蛊的干扰，深入生死门，就得需要勇气蛊的帮助。
+然后勇气蛊，已经被人祖带进去，此刻在人祖的身上。北冥冰魄没有勇气，无法进入生死门，一时无法，只好四处流浪，寻找解决的办法。
+他走过高山，淌过流水，在野兽的追逐下逃命，在寒冷中忍饥挨饿，吃了很多的苦。
+北冥冰魄心怀深深的愧疚和焦虑。
+他愧疚的是，他赋予古月阴荒的人生意义，结果导致古月阴荒牺牲自己，变成了生命宝石。北冥冰魄等若是害死他二姐姐的凶手。
+他焦急的是，虽然有生命宝石，但却无法回到父亲的身边。他担心，时间一长，恐怕父亲就要在落魄谷中魂飞魄散，而古月阴荒也会白白牺牲。
+他走着走着，头顶上紫色的天空，慢慢消去，变成了黑色。
+原来太古 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（十五）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十五）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（十五）">人祖传（十五）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:35:46.000Z" title="发表于 2020-10-14 17:35:46">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">落魄谷中是一片广阔复杂的迷宫，人祖寻找失踪的北冥冰魄，自己也在迷宫中迷失了方向，连续几天几夜，他都没有找到出口。
+他累极了，瘫倒在地上，背靠着迷宫的墙壁。
+无边的孤独，迅速包裹着他。
+这都是因为，他将原来的心交给了希望，现在有的，是一颗孤独之心。
+孤独的滋味难以忍受，人祖害怕孤独，曾经为此不惜挖下自己的双眼，化为一儿一女陪伴自己。
+但现在，他只能忍受孤独带来的折磨。
+孤独中，人祖感到无边的冷寂、迷茫、痛苦。时间似乎都静止，世界只剩下他一个人，孤零零的一个人，身边没有人可以依靠，没有火光可以取暖。
+人祖一度感到窒息，但是随着时间的推移，他渐渐地习惯了孤独，甚至开始品味孤独。
+他开始觉得孤独其实并不可怕。
+在孤独中，他感到安宁，静谧，平和。
+他自言自语：“人啊，你究竟算是什么呢？在这天地里这样挣扎，如此来去匆匆。”
+然后他听到一个从身体里传来的声音：“人啊，你是万物之灵。你孤独，因此渴望被安抚，被理解，被证明。你现在最想做的，就是找到出去的路，离开这个鬼地方。”
+人祖吓了一跳：“谁，谁在跟我说话？”
+那个声音便又笑道：“我是一只蛊，就叫做‘自己’，你审视你的内心，就会发现我了。”
+人祖连忙 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（十四）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十四）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（十四）">人祖传（十四）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:34:59.000Z" title="发表于 2020-10-14 17:34:59">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">北冥冰魄将他的二姐古月阴荒救醒，二人再次为如何救活父亲，求教思想蛊。
+思想蛊道：“人啊，成败山已经消失了，不知道什么时候什么地方才能重新形成。能救活你们的父亲的其他方法，我也不清楚。但不要灰心，你们可以去找智慧蛊问问看。我就是它的母亲，智慧是思想的结晶。”
+青出于蓝而胜于蓝，思想蛊不知道的事情，智慧蛊未必不知道。
+北冥冰魄和古月阴荒便在思想蛊的指点下，找到了智慧蛊。
+智慧蛊和人祖有过结，当年人祖动用规矩二蛊，曾经捕捉到智慧蛊。但最终被智慧蛊逃走了。
+起先，智慧蛊并不愿意帮助北冥冰魄和古月阴荒。
+但是看在他们俩，是母亲思想蛊介绍来的，便勉为其难地道：“人啊，我可以为你们指点迷津。但我需要报酬，你们中的一位需要将中年交给我。”
+“我把中年交给你吧。”古月阴荒立即道，毫不犹豫。
+她被弟弟北冥冰魄唤醒，又赋予人生的意义，就是救活父亲人祖。因此这时候答话，当仁不让。
+北冥冰魄争不过姐姐，只好让她奉献了她的中年。
+这就意味着，古月阴荒青年一过，就会直接跳过中年，迈入老年。
+但为了救活父亲，她也顾不得这么多了。
+智慧蛊得到了古月阴荒的中年，便指点她道：“在西边的黄金沙漠中央，有一片静止的蓝宝石海洋， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89/" title="人祖传（十三）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十三）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89/" title="人祖传（十三）">人祖传（十三）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:33:58.000Z" title="发表于 2020-10-14 17:33:58">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖的二女儿古月阴荒，为了将自己的父亲从生死门中解救出来，踏上成败山，寻找成功蛊。
+但最后关头，她失败了，丧失了自我，成为了一个丑陋而又强大的怪物。
+没有女儿的搭救，大儿子太日阳莽更是颓废沉迷，人祖困于落魄谷中，不能生还。
+落魄谷如同一个大迷宫，曲折蜿蜒。时而蔓延出茫茫一片的迷惘雾，能令魂魄松散。时而刮起凛冽如刃的落魄风，专门切割魂魄。
+人祖乃是魂体，在迷惘雾中寻不到出去的方向，落魄风则切割他的魂魄，令他越来越虚弱，处境也越发危险。
+被落魄风切割下来的魂魄碎片，渐渐凝合起来，成为一个少年。
+就这样，人祖的第三子诞生了。
+他就是北冥冰魄。
+“我的儿子啊，谢谢你的陪伴。我的时间不多了，在最后的日子里，因为有你的陪伴，父亲我一点都不寂寞。”人祖感叹道。
+北冥冰魄外冷心热，虽然话不多，但对人祖十分孝顺。
+看着人祖一天天虚弱下去，他的心情也越发沉重。
+他决定把人祖救出去。
+人祖感受他的决意，既欣慰又痛惜：“不要忙活了，我的儿子，你的孝心我心领了。我现在明白了，生死强求不得。人总归是要死的，这就是人的宿命。”
+北冥冰魄哭泣道：“父亲，我知道你说的话是对的。我也知道，我的努力会白费。但是看着你这样虚 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89/" title="人祖传（十二）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十二）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89/" title="人祖传（十二）">人祖传（十二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:33:33.000Z" title="发表于 2020-10-14 17:33:33">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖陷入死境，跌落到落魄谷内，不得而出。
+古月阴荒，为了救回父亲，亲上成败山，企图攀登顶峰，获取那只唯一的成功蛊。
+只要向成功蛊许愿，古月阴荒就能救回人祖。
+但是古月阴荒刚到山脚，就遭到了石人的阻碍。
+原来人祖的二女儿，来到成败山时，惊扰了爱情蛊的美梦。
+爱情蛊出于愤怒，便点化了石人，要干扰古月阴荒。
+古月阴荒杀了石人，走上了半山腰。
+但爱情蛊并未离去，它出现在古月阴荒的面前，开口道：“人啊，你惊扰了我的美梦，还妄想取走成功蛊。现在我就将整个成败山撞塌，你在亿万个石头中，好好去找寻那唯一的成功蛊吧。哈哈哈。”
+说着，爱情蛊便一头向成败山撞去。
+成败山，并非是寻常的山峰，整个山丘都是由一颗颗的小石子堆积成的。
+被爱情蛊一撞，成败山轰然倒塌。
+爱情蛊得意洋洋而去，留下古月阴荒看着这一大堆的石子，陷入迷茫当中。
+如何从这些混乱的石头里面，取得唯一的那只成功蛊呢？
+古月阴荒犯难，不得已，只好回去再次向思想蛊讨教。
+思想蛊听了古月阴荒的叙述之后，叹息一声：“爱情蛊向来都是这样的蛮不讲理，唉，就算是我，或者我的孩子智慧蛊，也不愿面对它。”
+“如今成败山倒塌了，你只有亲自用手拾取这些石子，并中分辨出 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89/" title="人祖传（十一）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十一）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89/" title="人祖传（十一）">人祖传（十一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:32:48.000Z" title="发表于 2020-10-14 17:32:48">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">人祖救援大儿子太日阳莽失败，自己就要复活的最后关头，功亏一篑，被逆流河冲入了落魄谷里去。
+他的二女儿古月阴荒，知道了这个消息后，便想法营救自己的父亲。
+然而要进入生死门，必须要有勇气蛊、信念蛊的帮助。
+但是这些蛊虫，都在她的父亲人祖的身上。
+古月阴荒无法进入生死门，却又想救回人祖，她想不出方法，只好向思想蛊请教。
+思想蛊便告诉她两种方法。
+第一种方法，是进入空穴，然后推开空门，直接来到人祖的身边。然后再通过空穴，逃离生死门。但是这个方法，只能救回人祖的魂魄，却不能令其重生。
+第二种方法，是攀登道成败山的峰巅，找到唯一的那只成功蛊。只要向成功蛊许愿，古月阴荒就能救回人祖，并令其成功复活。
+古月阴荒早就知道空穴的存在，但怎么也找不到进入空穴的方法。而且她也想，让父亲真正的复活，便来到成败山。
+成败山并不高，简直就是一个小土丘。它很特别，是亿万颗的“鹅卵石”堆起来的。
+这些“鹅卵石”，其实都是失败蛊。还有唯一的一只成功蛊，就在成败山的巅峰处。
+古月阴荒来到山脚，开始攀登成败山。
+她攀登的动静，惊醒了在附近睡觉的爱情蛊。
+爱情蛊被扰了美梦，十分愤怒，便想报复古月阴荒。它用它独特的力量，点化了一 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%EF%BC%89/" title="人祖传（十）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（十）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E5%8D%81%EF%BC%89/" title="人祖传（十）">人祖传（十）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:31:55.000Z" title="发表于 2020-10-14 17:31:55">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">话说太日阳莽向天空冲刺，最终陨落身亡。
+作为父亲的人祖得知后，异常悲痛，找到智慧蛊发难。
+就是智慧蛊教会太日阳莽喝酒，最终才导致一系列的事情。
+智慧蛊连忙道：“人祖啊人祖，你不要找我麻烦。你的儿子虽然死了，但也不是不可以复活啊。只要你进入生死门，带着他走向生路，走到阳光之下，那他就能复活了。”
+人祖楞了一下，继而大喜，忽然又大怒。
+他伸手捏住智慧蛊，质问道：“智慧蛊啊智慧蛊，你当我还像当初那样懵懂无知吗？生死门是凶险之地，进去了就再也出不来。你害了我儿子不说，还想再害死我吗？”
+智慧蛊连忙道：“其他生灵不懂得进出生死门的窍门，所以它们出不来。但是这些窍门我知道啊，我统统告诉你。”
+“你是活人，要进入生死门，就得从死路进去。这路非同寻常，乃是宿命蛊离开公平蛊时，留下来的路，称之为命途。命途中有大量的忧患蛊，你要从死路进去，就得拥有勇气蛊。这样你就不怕忧患的折磨了。”
+“当你进入生死门中，看到公平蛊时，你已经死了。但同时，你也会看到你的大儿子太日阳莽的魂魄。你将其带走，顺着另一条路——生路回来。生路是宿命蛊拜访公平蛊时，走出的痕迹，也是命途。”
+“但在这命途当中，有三个关卡。一座是荡魂山， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B9%9D%EF%BC%89/" title="人祖传（九）">     <img class="post_bg" src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（九）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B9%9D%EF%BC%89/" title="人祖传（九）">人祖传（九）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-14T09:12:29.000Z" title="发表于 2020-10-14 17:12:29">2020-10-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/">人祖传</a></span></div><div class="content">太古的阳光，普照万物生灵。
+夏蝉嘈杂，喧闹出生命的热量。而浓绿的树木，形成一大片的阴凉，并随着风儿摇摆。
+一大缸的美酒，摆放在太日阳莽的面前，他却皱起眉头，没有大口畅饮的欲望。
+“神游蛊啊，神游蛊，你可害苦了我。现在我有美酒，也不敢畅饮。就怕喝醉了之后，被你带到另外的险地。”太日阳莽苦恼地长叹道。
+他前两次，一次被神游蛊带到了平凡深渊，一次被带到毛民的油锅里。幸亏运气好，两次都险死还生了。
+神游蛊道：“人族太子啊，我也不是故意陷害你的。其实，每一次都是你醉酒之后，动用了我的力量。我也是无辜的呀，况且我也曾经救过你一命，不是吗？”
+神游蛊的确从斑虎蜜蜂的手中，救下过太日阳莽一次。
+太日阳莽神情颓丧：“唉……过去的事情就不提了，现在我因为有你，都不敢喝美酒。我的生活，变得了无生趣了。”
+神游蛊听他这么一说，也感到惭愧：“既然这样，那我教你一个方法。你先去天上，在九重天中的青天里，有一片竹林。在竹林中，采摘一节碧空的玉竹。再到九重天的蓝天里，在夜晚的时候，收集星光碎屑中的八角钻石。然后你在清晨时分，飞向天空，借助朝阳的荣耀之光，将我变成定仙游蛊。我成了那个蛊后，就再也不会带着烂醉的你乱窜了。 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://pic.downk.cc/item/5f8498b91cd1bbb86b322d05.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Spel</div><div class="author-info__description">一句道不尽，缄默宁无言</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">38</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div><a class="button--animated" id="card-info-btn" href="mailto:zhong_wuyan@163.com"><i class="fas fa-envelope"></i><span>联系方式</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">感谢访问本站(●'◡'●)</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（三十八）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十八）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AB%EF%BC%89/" title="人祖传（三十八）">人祖传（三十八）</a><time datetime="2020-10-14T09:53:53.000Z" title="发表于 2020-10-14 17:53:53">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（三十七）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十七）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%B8%83%EF%BC%89/" title="人祖传（三十七）">人祖传（三十七）</a><time datetime="2020-10-14T09:53:19.000Z" title="发表于 2020-10-14 17:53:19">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（三十六）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十六）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%85%AD%EF%BC%89/" title="人祖传（三十六）">人祖传（三十六）</a><time datetime="2020-10-14T09:51:59.000Z" title="发表于 2020-10-14 17:51:59">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（三十五）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十五）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E4%BA%94%EF%BC%89/" title="人祖传（三十五）">人祖传（三十五）</a><time datetime="2020-10-14T09:50:54.000Z" title="发表于 2020-10-14 17:50:54">2020-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（三十四）"><img src="https://pic.downk.cc/item/5f86acef1cd1bbb86b669b9b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人祖传（三十四）"/></a><div class="content"><a class="title" href="/2020/10/14/%E4%BA%BA%E7%A5%96%E4%BC%A0%EF%BC%88%E4%B8%89%E5%8D%81%E5%9B%9B%EF%BC%89/" title="人祖传（三十四）">人祖传（三十四）</a><time datetime="2020-10-14T09:50:08.000Z" title="发表于 2020-10-14 17:50:08">2020-10-14</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%BA%E7%A5%96%E4%BC%A0/"><span class="card-category-list-name">人祖传</span><span class="card-category-list-count">38</span></a></li>
+            
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.1em; color: #999">小说</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">38</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">38</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-10-14T10:26:41.333Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Spel</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  $.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js',function () {
+    jinrishici.load(function (result) {
+      if (true) {
+        var sub = "".length == 0 ? new Array() : "".split(',')
+        var content = result.data.content
+        var both = sub.unshift(content)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
